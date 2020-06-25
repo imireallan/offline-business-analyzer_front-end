@@ -1,0 +1,46 @@
+.business-form {
+    margin: 2em auto;
+    width: 90%;
+    max-width: 960px;
+	/* padding: 2em; */
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column-one, .column-two {
+    flex-basis: 49%;
+}
+
+.form-control-group {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+}
+
+.form-control-group label {
+    color: rgba(0, 0, 0, 0.6);
+}
+.form-control-group input {
+    padding: .15em 0;
+    outline: 0;
+    border: 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+    background-color: var(--color-grey-md);
+    transition: border-bottom-color 200ms linear;
+    caret-color: var(--color-orange);
+}
+
+.form-control-group input:focus {
+    border-bottom-color: var(--color-orange);
+}
+
+.button-wrapper {
+    text-align: right;
+}
+
+.btn {
+    margin: 1em;
+}
