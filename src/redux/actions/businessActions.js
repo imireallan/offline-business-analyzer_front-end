@@ -35,10 +35,10 @@ const registerBusiness = (values, redirect) => async (dispatch) => {
 	}
 };
 
-const getBusiness = (values) => async (dispatch) => {
+const getBusiness = () => async (dispatch) => {
 	dispatch(beginApiCall());
 	try {
-		const resp = await axios.get(`${baseUrl}business/list`, {
+		const resp = await axios.get(`${baseUrl}business/owner`, {
 			headers: {
 				Authorization: `Token ${token}`
 			}
